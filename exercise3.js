@@ -3,11 +3,41 @@
 // First, we have the #cell-one element. We will give two event listeners to this element:
     // 1) An event listener that, when the element is clicked, will turn the background color to green.
     // 2) An event listener that, when the element is double-clicked, will turn the background color to blue. 
+    let squareOneButton= document.getElementById ("cell-one")
 
+    squareOneButton.addEventListener ("click", () => {
+        squareOneButton.style.backgroundColor= "green"
+    })
+
+    squareOneButton.addEventListener ("dblclick", () => {
+        squareOneButton.style.backgroundColor= "blue"
+    })
 // Next, we'll target the #cell-two element. We will give two event listeners to this element:
     // 1) An event listener that, when the element is hovered over, will turn the border into a green, 2px width, and solidly-lined border. 
     // 2) An event listener that, when the user removes their mouse from over the element, will turn the border back into a black, 2 px width, and solidly-lined border.  
 
+    let squareTwoButton= document.getElementById ("cell-two")
+
+    squareTwoButton.addEventListener ("mouseover", () => {
+        squareTwoButton.style.border= "2px solid green"
+    })
+
+    squareTwoButton.addEventListener ("mouseout", () => {
+        squareTwoButton.style.border= "2px solid black"
+    })
+
 // Lastly, we'll target the #cell-three element. We will give two event listeners to this element:
     // 1) An event listener that, when the element is clicked, will fill the element with a text of "Stop clicking me!"
     // 2) An event listener that, when the element is right-clicked, will fill the element with a text of "No right clicking either!!"
+
+    let squareThreeButton= document.getElementById ("cell-three")
+
+        squareThreeButton.addEventListener ("click", () => {
+            squareThreeButton.innerHTML= "Stop clicking me!"
+        })
+
+        squareThreeButton.addEventListener ("mousedown", () => {
+            squareThreeButton.innerHTML= "No right clicking either!"
+        })
+
+   

@@ -5,3 +5,9 @@
 // Next, we'll do the event when any key is pressed on the keyboard. On the #circle-two element, set an event listener that when you press any key on the keyboard, will turn its background color green.
 
 // Lastly, we'll do the event when the user releases a key on the keyboard. On the #circle-three element, set an event listener that when you release any key on the keyboard, will turn its background color red. 
+
+let circleOneButton= document.getElementById ("circle-one")
+
+circleOneButton.addEventListener ("click", () => {
+    circleOneButton.style.backgroundColor= "blue"
+})
